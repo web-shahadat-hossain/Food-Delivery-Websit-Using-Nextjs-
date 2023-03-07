@@ -66,3 +66,19 @@ a {
     margin: auto;
   }
 }
+
+.btn{
+  width: max-content;
+  padding: 1rem;
+  border-radius: 4rem;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--themeRed);
+}
+.title{
+  font-size: 2rem;
+  text-align: center;
+  color: var(--themeBlack);
+}

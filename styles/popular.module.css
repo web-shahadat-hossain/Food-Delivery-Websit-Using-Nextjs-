@@ -1,0 +1,49 @@
+.popular{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.popular >div{
+    box-shadow: var( --shadow);
+    padding: 20px;
+border: 1px solid #eaeaea;
+}
+
+.images{
+position: relative;
+}
+.price{
+position: relative;
+background-color: var(  --themeRed);
+color: #fff;
+padding: 2px 3px;
+border-radius: 1px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.content{
+    text-align: center;
+}
+.content p {
+line-height: 0;
+padding-bottom: 10px;
+}
+.content p i{
+  color: #FFDA3F;
+  padding: 0 2px;
+}
+
+@media only screen and (max-width:991px) {
+    .popular{
+        grid-template-columns: repeat(2, 1fr);
+       
+  }}
+@media only screen and (max-width:601px) {
+    .popular{
+        grid-template-columns: repeat(1, 1fr);
+       
+  }}

@@ -1,8 +1,12 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import Hero from "../Components/Home/Hero";
+import Works from "../Components/Home/Works";
 import Layout from "../Components/Layout";
-
+import Speciality from "../Components/Home/Speciality"
+import Popular from "../Components/Home/Popular"
+import Gallery from "../Components/Home/Gallery"
+import Reviews from "../Components/Home/Reviews";
 export default function Home() {
   return (
     <Fragment>
@@ -20,7 +24,26 @@ export default function Home() {
           />
         </Head>
         {/* body */}
-        <main>{<Hero />}</main>
+        <main>
+          {<Hero />}
+          {
+            <Speciality/>
+          }
+           {
+            <Popular/>
+          } 
+          {
+            <Works />
+          }       
+            {
+              <Gallery/>
+            }   
+          
+            {
+              // <Reviews/>
+            }   
+          
+           </main>
       </Layout>
     </Fragment>
   );

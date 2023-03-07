@@ -1,0 +1,20 @@
+.galleryContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.gallery{
+    border: 0.55rem solid white;
+    box-shadow: 7px 10px 5px rgb(231, 231, 231), -3px 3px 10px rgb(230, 230, 230);
+}
+
+@media only screen and (max-width:991px) {
+    .galleryContainer{
+        grid-template-columns: repeat(2, 1fr);
+       
+  }}
+@media only screen and (max-width:601px) {
+    .galleryContainer{
+        grid-template-columns: repeat(1, 1fr);
+       
+  }}
